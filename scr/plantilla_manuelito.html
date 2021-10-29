@@ -59,6 +59,12 @@
                 background-color: #E4E4E4;
             }
 
+            /* estilos footer */
+            .footer {
+
+                background-color: #58DEA6;
+            }
+
         </style>
     </head>
     <body>
@@ -163,10 +169,14 @@
         <!-- empieza el footer -->
         <footer class="footer mt-auto py-3 bg-">
             <div class="container">
-              <div class="row">
-                <div class="col-4 align-self-center text-center"> Direccion del sitio</div>
-                <div class="col-4 align-self-center text-center"> Contacto</div>
-                <div class="col-4 align-self-center text-center"> Ayuda y soporte</div>
+              <div class="row justify-content-between">
+                <div class=" col-4 d-none d-md-block embed-responsive embed-responsive-4by3"> <!-- este mapa se muestra a partir de tamaño medio -->
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8474119298544!2d-4.1273884966594885!3d40.602490826354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd410a35997dbf19%3A0xb08e3642aef992f!2sIES%20Juan%20de%20Herrera!5e0!3m2!1ses!2ses!4v1635513496436!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-6 d-md-none embed-responsive embed-responsive-4by3"> <!-- este mapa es uno pequeño para resoluciones muy bajas -->
+                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8474119298544!2d-4.1273884966594885!3d40.602490826354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd410a35997dbf19%3A0xb08e3642aef992f!2sIES%20Juan%20de%20Herrera!5e0!3m2!1ses!2ses!4v1635513496436!5m2!1ses!2ses" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="col-4 text-center"> Ayuda y soporte</div>
               </div>
             </div>
         </footer>
