@@ -42,7 +42,7 @@ body {
     border-left: none !important;
     border-right: none !important;
     border-color: #594038 !important;
-    background-color: #FAFAFA;
+    background-color: #FDFDFD;
 }
 
 /* estilos para el body */
@@ -58,4 +58,10 @@ body {
 .titfooter {
 
     font-size:1.3rem;
+    
+}
+
+#boton, #boton2 {
+
+    cursor: pointer;
 }
