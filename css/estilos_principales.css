@@ -1,0 +1,61 @@
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+/* estilos para los botones del menu */
+
+.btn, .btn-primary {
+
+    background-color:#0E9C62;
+    border-color: #0E9C62;
+    border-radius: 0%;
+    font-size:large;
+}
+
+.btn:hover, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+
+    background-color:#594038;
+    border-color: #58DEA6;
+}
+
+.btn-primary:focus, .btn-primary:active, .btn-primary.active {
+
+    box-shadow:0 0 0 0.1rem #FFB37B;
+    background-color:#594038;
+}
+
+.dropdown-item:hover {
+
+    background-color:#58DEA6;
+}
+
+.dropdown-item:focus {
+
+    background-color:#FFB37B;
+}
+
+/* estilos para el menu en general */
+
+.marco-menu {
+    border-left: none !important;
+    border-right: none !important;
+    border-color: #594038 !important;
+    background-color: #FAFAFA;
+}
+
+/* estilos para el body */
+
+/* estilos footer */
+
+.footer {
+
+    background-color: #0E9C62;
+    color: white;
+}
+
+.titfooter {
+
+    font-size:1.3rem;
+}
