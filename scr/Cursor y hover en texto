@@ -1,0 +1,29 @@
+
+Estilos css
+
+
+  #parrafo{
+                background-color: #E4E4E4;
+                border:double #0E9C62; 
+               font-size: 20px !important;
+            }
+            #articulosimg{
+                padding-bottom: 10px;
+
+            }
+            #parrafo:hover{
+                
+                background-color: #4e534e85; 
+            }
+            #cursor{
+                cursor: pointer;
+            }
+
+Cambio en el html
+
+
+<div id="cursor" onclick="location.href='imagen1.html' "class="col-sm-5 col-md-3 align-self-center text-center articulos mt-5"> 
+                    <img id="articulosimg" src="imagenes/bordenotas.png" class="img-fluid mx-auto" alt="Elemento 1">
+                    <p id="parrafo"class="descripcion lead fs-4"><b>Artículo Ejemplo - 00.00€</b></p>
+                </div>
+
