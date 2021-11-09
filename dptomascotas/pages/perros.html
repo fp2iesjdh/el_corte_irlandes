@@ -9,12 +9,140 @@
         <title>El corte irlandés</title>
         <link rel="icon" href="../../images/logos/lepre.ico" type="image/x-icon">
         <link rel="stylesheet" href="../../css/estilos_principales.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
+            .dropdown {
+                float: right;
+                padding-right: 30px;
+            }
+            
+            /* TOTAL */
+            .total-section p {
+                margin-bottom: 20px;
+                color: black;
+            }
+
+            .cart-detail {
+                padding: 15px 0px;
+            }
+            /* IMAGENES */
+            .cart-detail-img img {
+                width: 100%;
+                height: 100%;
+                padding-left: 15px;
+            }
+
+            .cart-detail-product p {
+                margin: 0px;
+                color: #000;
+                font-weight: 500;
+            }
+
+            .cart-detail .price {
+                font-size: 12px;
+                margin-right: 10px;
+                font-weight: 500;
+                color: #000;
+            }
+            /* unidades */
+            .cart-detail .count {
+                color: #164616;
+
+            }
+            /* PAGAR */
+            .checkout {
+                border-top: 1px solid #d2d2d2;
+                padding-top: 15px;
+            }
+
+            .checkout .btn-primary {
+                border-radius: 50px;
+                height: 50px;
+            }
+
+            .dropdown-menu:before {
+                content: " ";
+                position: absolute;
+                top: -20px;
+                right: 50px;
+                border: 10px solid transparent;
+                border-bottom-color: #fff;
+            }
+
+            .carrito {
+
+                position: fixed;
+                z-index: 10;
+                left: 90%;
+            }
+
         </style>
     </head>
     <body>
         <!-- boton para volver arriba -->
         <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+        <!-- carrito de compra siempre arriba a la derecha -->
+        <div class="dropdown carrito">
+            <button type="button" class="btn btn-primary" data-toggle="dropdown">
+                <i class="fa fa-shopping-cart"aria-hidden="true"></i> Carrito
+                <span class="badge badge-pill badge-danger">3</span> <!-- numero de articulos-->
+            </button>
+
+            <div class="dropdown-menu">
+                <div class="row total-header-section">
+                    <div class="col-lg-6 col-sm-6 col-6">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-lg-6 col-sm-6 col-6 total-section text-right">
+                        <p>Total: <span class="text-info">1.999€</span></p>
+                    </div>
+                </div>
+
+                <!-- Rows de articulos del carro -->
+                <!-- Artículo 1 -->
+                <div class="row cart-detail">
+                    <div class="col-lg-4 col-sm-4 col-4 cart-detail-img">
+                        <img src="https://m.media-amazon.com/images/I/61KJPfsxssL._AC_UL480_FMwebp_QL65_.jpg">
+                    </div>
+
+                    <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">
+                        <p> Pienso para Manuel</p>
+                        <span class="price text-info"> 25€</span> <span class="count"> Unidades:10</span>
+                    </div>
+                </div>
+
+                <!-- Artículo 2 -->
+                <div class="row cart-detail">
+                    <div class="col-lg-4 col-sm-4 col-4 cart-detail-img">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71sNNCTfMuL.__AC_SY445_SX342_QL70_ML2_.jpg">
+                    </div>
+                    <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">
+                        <p>Iphone 12 256GB</p>
+                        <span class="price text-info"> 500€</span> <span class="count"> Unidades:01</span>
+                    </div>
+                </div>
+
+                <!-- Artículo 3 -->
+                <div class="row cart-detail">
+                    <div class="col-lg-4 col-sm-4 col-4 cart-detail-img">
+                        <img
+                            src="https://m.media-amazon.com/images/I/5183aMmrVdL._AC_SL1344_.jpg">
+                    </div>
+                    <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">
+                        <p>PS5 Ed.Digital</p>
+                        <span class="price text-info"> 499€</span> <span class="count"> Unidades:01</span>
+                    </div>
+                </div>
+
+                
+                <div class="row">
+                    <!-- Botón pasar por caja -->
+                    <div class="col-lg-12 col-sm-12 col-12 text-center checkout">
+                        <button class="btn btn-primary btn-block">Pagar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- empieza el header donde irá el logo y será clickable para ir a la portada -->
         <header>
             <div class="container-fluid">
@@ -30,52 +158,59 @@
         <!-- acaba el header, por ahora dejo el menu fuera -->
         <div class="container-fluid menu-principal mt-3"> <!-- empieza el menu  -->
             <div class="row border border-5 marco-menu mx-5">
-                <div class="col-12  align-self-center text-center menu my-3">
-                    <div class="btn-group"> <!-- empiezan los botones del menu -->
-                        <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Electrodomésticos
+                <div class="col-12 align-self-center text-center menu my-3">
+                    <!-- Example split danger button -->
+                    <div class="btn-group">
+                        <a href="gatos.html"><button type="button" class="btn btn-primary">Electrodomésticos</button></a>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
-                        <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Sección 1</a>
-                        <a class="dropdown-item" href="#">Sección 2</a>
-                        <a class="dropdown-item" href="#">Sección 2</a>
-                        <div class="dropdown-divider"></div> <!-- esto lo vi interesante, por si quieres poner una seccion extra especial -->
-                        <a class="dropdown-item" href="#">Extra opcional</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="perros.html">Action</a></li>
+                        <li><a class="dropdown-item" href="gatos.html">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Mascotas
+                        <a href="gatos.html"><button type="button" class="btn btn-primary">Mascotas</button></a>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
-                        <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Perros</a>
-                        <a class="dropdown-item" href="gatos.html">Gatos</a>
-                        <a class="dropdown-item" href="otros_animales.html">Otros animales</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="perros.html">Action</a></li>
+                        <li><a class="dropdown-item" href="gatos.html">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Música
+                        <a href="gatos.html"><button type="button" class="btn btn-primary">Música</button></a>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
-                        <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Sección 1</a>
-                        <a class="dropdown-item" href="#">Sección 2</a>
-                        <a class="dropdown-item" href="#">Sección 2</a>
-                        <div class="dropdown-divider"></div> <!-- esto lo vi interesante, por si quieres poner una seccion extra especial -->
-                        <a class="dropdown-item" href="#">Extra opcional</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="perros.html">Action</a></li>
+                        <li><a class="dropdown-item" href="gatos.html">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Videojuegos
+                        <a href="gatos.html"><button type="button" class="btn btn-primary">Videojuegos</button></a>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
-                        <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Sección 1</a>
-                        <a class="dropdown-item" href="#">Sección 2</a>
-                        <a class="dropdown-item" href="#">Sección 2</a>
-                        <div class="dropdown-divider"></div> <!-- esto lo vi interesante, por si quieres poner una seccion extra especial -->
-                        <a class="dropdown-item" href="#">Extra opcional</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="perros.html">Action</a></li>
+                        <li><a class="dropdown-item" href="gatos.html">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -165,5 +300,7 @@
         <script src="../../js/script_mapa_oculto.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script src="../../js/script_volver_arriba.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </body>
 </html>
