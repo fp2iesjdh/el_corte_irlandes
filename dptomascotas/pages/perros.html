@@ -11,70 +11,7 @@
         <link rel="stylesheet" href="../../css/estilos_principales.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
-            .dropdown {
-                float: right;
-                padding-right: 30px;
-            }
             
-            /* TOTAL */
-            .total-section p {
-                margin-bottom: 20px;
-                color: black;
-            }
-
-            .cart-detail {
-                padding: 15px 0px;
-            }
-            /* IMAGENES */
-            .cart-detail-img img {
-                width: 100%;
-                height: 100%;
-                padding-left: 15px;
-            }
-
-            .cart-detail-product p {
-                margin: 0px;
-                color: #000;
-                font-weight: 500;
-            }
-
-            .cart-detail .price {
-                font-size: 12px;
-                margin-right: 10px;
-                font-weight: 500;
-                color: #000;
-            }
-            /* unidades */
-            .cart-detail .count {
-                color: #164616;
-
-            }
-            /* PAGAR */
-            .checkout {
-                border-top: 1px solid #d2d2d2;
-                padding-top: 15px;
-            }
-
-            .checkout .btn-primary {
-                border-radius: 50px;
-                height: 50px;
-            }
-
-            .dropdown-menu:before {
-                content: " ";
-                position: absolute;
-                top: -20px;
-                right: 50px;
-                border: 10px solid transparent;
-                border-bottom-color: #fff;
-            }
-
-            .carrito {
-
-                position: fixed;
-                z-index: 10;
-                left: 90%;
-            }
 
         </style>
     </head>
@@ -82,67 +19,7 @@
         <!-- boton para volver arriba -->
         <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
         <!-- carrito de compra siempre arriba a la derecha -->
-        <div class="dropdown carrito">
-            <button type="button" class="btn btn-primary" data-toggle="dropdown">
-                <i class="fa fa-shopping-cart"aria-hidden="true"></i> Carrito
-                <span class="badge badge-pill badge-danger">3</span> <!-- numero de articulos-->
-            </button>
-
-            <div class="dropdown-menu">
-                <div class="row total-header-section">
-                    <div class="col-lg-6 col-sm-6 col-6">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-lg-6 col-sm-6 col-6 total-section text-right">
-                        <p>Total: <span class="text-info">1.999€</span></p>
-                    </div>
-                </div>
-
-                <!-- Rows de articulos del carro -->
-                <!-- Artículo 1 -->
-                <div class="row cart-detail">
-                    <div class="col-lg-4 col-sm-4 col-4 cart-detail-img">
-                        <img src="https://m.media-amazon.com/images/I/61KJPfsxssL._AC_UL480_FMwebp_QL65_.jpg">
-                    </div>
-
-                    <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">
-                        <p> Pienso para Manuel</p>
-                        <span class="price text-info"> 25€</span> <span class="count"> Unidades:10</span>
-                    </div>
-                </div>
-
-                <!-- Artículo 2 -->
-                <div class="row cart-detail">
-                    <div class="col-lg-4 col-sm-4 col-4 cart-detail-img">
-                        <img src="https://images-na.ssl-images-amazon.com/images/I/71sNNCTfMuL.__AC_SY445_SX342_QL70_ML2_.jpg">
-                    </div>
-                    <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">
-                        <p>Iphone 12 256GB</p>
-                        <span class="price text-info"> 500€</span> <span class="count"> Unidades:01</span>
-                    </div>
-                </div>
-
-                <!-- Artículo 3 -->
-                <div class="row cart-detail">
-                    <div class="col-lg-4 col-sm-4 col-4 cart-detail-img">
-                        <img
-                            src="https://m.media-amazon.com/images/I/5183aMmrVdL._AC_SL1344_.jpg">
-                    </div>
-                    <div class="col-lg-8 col-sm-8 col-8 cart-detail-product">
-                        <p>PS5 Ed.Digital</p>
-                        <span class="price text-info"> 499€</span> <span class="count"> Unidades:01</span>
-                    </div>
-                </div>
-
-                
-                <div class="row">
-                    <!-- Botón pasar por caja -->
-                    <div class="col-lg-12 col-sm-12 col-12 text-center checkout">
-                        <button class="btn btn-primary btn-block">Pagar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- empieza el header donde irá el logo y será clickable para ir a la portada -->
         <header>
             <div class="container-fluid">
@@ -166,8 +43,8 @@
                         <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="perros.html">Action</a></li>
-                        <li><a class="dropdown-item" href="gatos.html">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Separated link</a></li>
@@ -181,9 +58,7 @@
                         <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="perros.html">Action</a></li>
                         <li><a class="dropdown-item" href="gatos.html">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                        <li><a class="dropdown-item" href="otros_animales.html">Something else here</a></li>
                         </ul>
                     </div>
                     <div class="btn-group">
