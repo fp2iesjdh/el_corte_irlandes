@@ -53,8 +53,8 @@ body {
 
     /* background-color: #FAFAFA; */
 
-    background: -prefix-linear-gradient(left top, #FFFFFF,#F9F9F9);
-    background: linear-gradient(to bottom right, #FFFFFF, #F9F9F9);
+    background: -prefix-linear-gradient(left top, #FFFFFF,#FDFDFD);
+    background: linear-gradient(to bottom right, #FFFFFF, #FDFDFD);
 }
 
 .artifoto:hover {
