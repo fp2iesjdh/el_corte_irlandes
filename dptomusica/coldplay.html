@@ -7,90 +7,21 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <title>El corte irlandés</title>
-        <link rel="icon" href="logos/lepre.ico" type="image/x-icon">
+        <link rel="icon" href="../images/logos/lepre.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/estilos.css">
         <style>
-
-            body {
-
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: medium;
-            }
-
-            /* estilos para los botones del menu */
-
-            .btn, .btn-primary {
-
-                background-color:#0E9C62;
-                border-color: #0E9C62;
-                border-radius: 0%;
-                font-size:large;
-            }
-
-            .btn:hover, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-
-                background-color:#594038;
-                border-color: #58DEA6;
-            }
-
-            .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-
-                box-shadow:0 0 0 0.1rem #FFB37B;
-                background-color:#594038;
-            }
-
-            .dropdown-item:hover {
-
-                background-color:#58DEA6;
-            }
-
-            .dropdown-item:focus {
-
-                background-color:#FFB37B;
-            }
-            
-            /* estilos para el menu en general */
-
-            .marco-menu {
-                border-left: none !important;
-                border-right: none !important;
-                border-color: #594038 !important;
-                background-color: #E4E4E4;
-            }
-
-            /* estilos para el body */
-
-            .articulos {
-
-               /* background-color: #C5A094; */
-                /* background-color:#FFB37B; */
-                /*background-color: #E4E4E4;*/
-            }
-
-            /* estilos footer */
-            .footer {
-
-                background-color: #0E9C62;
-                color: white;
-            }
-
-            .titfooter {
-
-                font-size:1.3rem;
-            }
-            #articuloimg{
-                border-radius:5px;
-            }
-
         </style>
     </head>
     <body>
+        <!-- boton para volver arriba -->
+        <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
         <!-- empieza el header donde irá el logo y será clickable para ir a la portada -->
         <header>
             <div class="container-fluid">
                 <div class="row justify-content-center mt-2">
                     <div class="col-6 ">
                         <a href="#">
-                            <img src="logos/banner-logo.png" class="img-fluid mx-auto" alt="Volver a portada">
+                            <img src="../images/logos/banner-logo.png" class="img-fluid mx-auto" alt="Volver a portada">
                         </a>
                     </div>
                 </div>
@@ -125,16 +56,16 @@
                         </div>
                     </div>
                     <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                        Música
+                        <a href="index.html"><button type="button" class="btn btn-primary">Música</button></a>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
-                        <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Sección 1</a>
-                        <a class="dropdown-item" href="#">Sección 2</a>
-                        <a class="dropdown-item" href="#">Sección 2</a>
-                        <div class="dropdown-divider"></div> <!-- esto lo vi interesante, por si quieres poner una seccion extra especial -->
-                        <a class="dropdown-item" href="#">Extra opcional</a>
-                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="80-90.html">80's - 90's</a></li>
+                            <li><a class="dropdown-item" href="90-00.html">90's - 2000</a></li>
+                            <li><a class="dropdown-item" href="00-10.html">2000 - 2010</a></li>
+                            <li><a class="dropdown-item" href="10-20.html">2010 - 2020</a></li>
+                        </ul>
                     </div>
                     <div class="btn-group">
                         <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
@@ -156,30 +87,51 @@
             <div class="row mx-5 justify-content-center"> <!-- filas para articulos -->
                 <!-- cuidado con los offset si se añaden mas articulos de 6, hay que configurarlos bien para todos los tamaños aunque -->
                 <!-- en teoria deberia ser copiar y pegar los 6 que hay y luego ir quitando desde el ultimo si son menos de los que hay -->
-                <div class="col-sm-5 col-md-3 align-self-center text-center articulos mt-5" id="articuloimg"> 
-                    <img src="imgmusica/prueba.png" class="img-fluid mx-auto" alt="Elemento 1">
-                    <p class="descripcion lead fs-4"><b>Artículo Ejemplo - 00.00€</b></p>
+                <div class="col-sm-5 col-md-3 offset-sm-1 align-self-center text-center articulos mt-5" >
+                    
+                    <h3><b>Coldplay – Parachutes</b></h3>
+
+                    
+                   
+                    
+                    <p ><b>Género:</b>  Rock</p>
+                    <p ><b>Estilo:</b> 
+                        Alternative Rock</p>
+                    <p ><b>Año:</b>	2000</p>
+                </div>
+
+
+                <div class="col-sm-5 col-md-3 offset-sm-1 align-self-center text-center articulos mt-5">
+                    <img src="./img/2000/15.png" class="img-fluid mx-auto" alt="Elemento 1">
+                    
+                </div>
+                 
+                <div class="col-sm-5 col-md-3 offset-sm-1 align-self-center text-center articulos mt-5" >
+                    
+                    <h3><b>Lista de Pistas</b></h3>
+                    <p >Don't Panic	2:17</p>
+                    <p >Shiver	4:59</p>
+                    <p >Spies	5:18</p>
+                    <p >Sparks	3:47</p>
+                    <p >Yellow	4:29</p>
+                    <p >Trouble	4:30</p>
+                    <p >Parachutes	0:46</p>
+                    <p >High Speed	4:14</p>
+                    <p >We Never Change	4:09</p>
+                    <p >Everything's Not Lost	5:25</p>
+                    <p >Life Is For Living	1:37</p>
+                    
+                </div>
+                
+                <div class="col-sm-5 col-md-3 offset-sm-1 align-self-center text-center articulos mt-5">
                 </div>
                 <div class="col-sm-5 col-md-3 offset-sm-1 align-self-center text-center articulos mt-5">
-                    <img src="imgmusica/prueba.png" class="img-fluid mx-auto" alt="Elemento 1" id="articuloimg">
-                    <p class="descripcion lead fs-4"><b>Artículo Ejemplo - 00.00€</b></p>
+                   <u> <h3>Precio: 12.99 €</h3></u>
                 </div>
-                <div class="col-sm-5 col-md-3 offset-md-1 align-self-center text-center articulos mt-5">
-                    <img src="imgmusica/prueba.png" class="img-fluid mx-auto" alt="Elemento 1" id="articuloimg">
-                    <p class="descripcion lead fs-4"><b>Artículo Ejemplo - 00.00€</b></p>
-                </div> 
-                <div class="col-sm-5 col-md-3 offset-sm-1 offset-md-0 align-self-center text-center articulos mt-5">
-                    <img src="imgmusica/prueba.png" class="img-fluid mx-auto" alt="Elemento 1" id="articuloimg">
-                    <p class="descripcion lead fs-4"><b>Artículo Ejemplo - 00.00€</b></p>
-                </div>
-                <div class="col-sm-5 col-md-3 offset-md-1 align-self-center text-center articulos mt-5">
-                    <img src="imgmusica/prueba.png" class="img-fluid mx-auto" alt="Elemento 1" id="articuloimg">
-                    <p class="descripcion lead fs-4"><b>Artículo Ejemplo - 00.00€</b></p>
-                </div>
+
                 <div class="col-sm-5 col-md-3 offset-sm-1 align-self-center text-center articulos mt-5">
-                    <img src="imgmusica/prueba.png" class="img-fluid mx-auto" alt="Elemento 1" id="articuloimg">
-                    <p class="descripcion lead fs-4"><b>Artículo Ejemplo - 00.00€</b></p>
-                </div>   
+                </div>
+                 
             </div>
         </div>
         <!-- empieza el footer -->

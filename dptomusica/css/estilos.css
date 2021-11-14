@@ -114,7 +114,50 @@ body {
 
     cursor: pointer;
 }
-.seccion{
-    width:600px;
-    height: 600px;
+a{
+    text-decoration: none;
+    color:#594038
 }
+a:hover{
+    color:#0E9C62
+}
+
+.seccion{
+    width:300px;
+    height: 100px;
+    margin-top:10px;
+    margin-left:31%;
+    border-radius:2px;
+    margin-bottom: 6%;
+    
+}
+.carousel-item {
+    height: 55vh;
+    min-height: 200px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  
+      .transition {
+      -webkit-transform: scale(1.8); 
+      -moz-transform: scale(1.8);
+      -o-transform: scale(1.8);
+      transform: scale(1.8);
+      }
+      .carousel-item {
+        width: 80%;
+        height: 100%;
+        margin-left:10%;
+        margin-right: 8%;
+      }
+      .carousel-item img {
+        height: 75%;
+        width: 50%;
+      }
+      .img-fluid{
+          border-radius: 4px;
+      }
+
