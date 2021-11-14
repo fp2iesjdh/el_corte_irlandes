@@ -1,0 +1,30 @@
+.producto{
+    margin-left: 500px;
+}
+#grid {
+    padding: 100px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 100px;
+    
+    
+}
+#titulo{
+    grid-column: 1/4;
+    
+}
+#imagen{
+    grid-column: 1/2;
+    
+}
+#descripcion{
+    
+    grid-column: 1/4;
+   
+    
+}
+#caracteristicas{
+    grid-column: 3/4;
+
+}

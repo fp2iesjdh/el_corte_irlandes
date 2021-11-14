@@ -11,15 +11,18 @@
         <link rel="stylesheet" href="../../css/estilos_principales.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
-            
 
+            .carrito {
+
+                left: 95%;
+            }
         </style>
     </head>
     <body>
         <!-- boton para volver arriba -->
         <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
         <!-- carrito de compra siempre arriba a la derecha -->
-        <a href="#"><button type="button carrito" class="btn btn-primary position-fixed end-0">
+        <a href="../../pages/carrito.html"><button type="button carrito" class="btn btn-primary position-fixed end-0">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
                 <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
             </svg>
@@ -43,56 +46,96 @@
             <div class="row border border-5 marco-menu mx-5">
                 <div class="col-12 align-self-center text-center menu my-3">
                     <div class="btn-group">
-                        <a href="../dptoelectrodomesticos/"><button type="button" class="btn btn-primary">Electrodomésticos</button></a>
+                        <a href="../../dptoelectrodomesticos/"><button type="button" class="btn btn-primary">Electrodomésticos</button></a>
                         <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../dptoelectrodomesticos/">Grandes Electrodomésticos</a></li>
-                        <li><a class="dropdown-item" href="../dptoelectrodomesticos/">Pequeños Electrodomésticos</a></li>
+                        <li><a class="dropdown-item" href="../../dptoelectrodomesticos/">Grandes Electrodomésticos</a></li>
+                        <li><a class="dropdown-item" href="../../dptoelectrodomesticos/">Pequeños Electrodomésticos</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="../dptoelectrodomesticos/">Ofertas</a></li>
+                        <li><a class="dropdown-item" href="../../dptoelectrodomesticos/">Ofertas</a></li>
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <a href="#"><button type="button" class="btn btn-primary">Mascotas</button></a>
+                        <a href="../index.html"><button type="button" class="btn btn-primary">Mascotas</button></a>
                         <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="pages/perros.html">Perros</a></li>
-                        <li><a class="dropdown-item" href="pages/gatos.html">Gatos</a></li>
-                        <li><a class="dropdown-item" href="pages/otros_animales.html">Otros animales</a></li>
+                        <li><a class="dropdown-item" href="perros.html">Perros</a></li>
+                        <li><a class="dropdown-item" href="gatos.html">Gatos</a></li>
+                        <li><a class="dropdown-item" href="otros_animales.html">Otros animales</a></li>
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <a href="../dptomusica/index.html"><button type="button" class="btn btn-primary">Música</button></a>
+                        <a href="../..dptomusica/index.html"><button type="button" class="btn btn-primary">Música</button></a>
                         <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../dptomusica/">80's - 90's</a></li>
-                        <li><a class="dropdown-item" href="../dptomusica/">90's - 2000</a></li>
-                        <li><a class="dropdown-item" href="../dptomusica/">2000 - 2010</a></li>
-                        <li><a class="dropdown-item" href="../dptomusica/">2010 - 2020</a></li>
+                        <li><a class="dropdown-item" href="../../dptomusica/">80's - 90's</a></li>
+                        <li><a class="dropdown-item" href="../../dptomusica/">90's - 2000</a></li>
+                        <li><a class="dropdown-item" href="../../dptomusica/">2000 - 2010</a></li>
+                        <li><a class="dropdown-item" href="../../dptomusica/">2010 - 2020</a></li>
                         </ul>
                     </div>
                     <div class="btn-group">
-                        <a href="../dptoVideojuegos/"><button type="button" class="btn btn-primary">Videojuegos</button></a>
+                        <a href="../../dptoVideojuegos/"><button type="button" class="btn btn-primary">Videojuegos</button></a>
                         <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                         <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../dptoVideojuegos/">Xbox</a></li>
-                        <li><a class="dropdown-item" href="../dptoVideojuegos/">PlayStation</a></li>
-                        <li><a class="dropdown-item" href="../dptoVideojuegos/">Nintendo</a></li>
+                        <li><a class="dropdown-item" href="../../dptoVideojuegos/">Xbox</a></li>
+                        <li><a class="dropdown-item" href="../../dptoVideojuegos/">PlayStation</a></li>
+                        <li><a class="dropdown-item" href="../../dptoVideojuegos/">Nintendo</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
         <!-- termina el menu aqui y empieza el cuerpo-->
-        
+        <div class="container mx-auto mb-5">
+            <div class="row mx-5 justify-content-center"> <!-- filas para articulos -->
+                <!-- cuidado con los offset si se añaden mas articulos de 6, hay que configurarlos bien para todos los tamaños aunque -->
+                <!-- en teoria deberia ser copiar y pegar los 6 que hay y luego ir quitando desde el ultimo si son menos de los que hay -->
+                <div class="col-sm-5 col-md-3 align-self-center text-center articulos mt-5"> 
+                    <a href="#"><img src="../images/alpha_spirit_multiprot.jpg" class="img-fluid mx-auto artifoto" alt="Elemento 1"></a><br><br>
+                    <p class="descripcion lead fs-4"><b>Alpha Spirit Multiprotein pienso hipoalergénico</b></p>
+                    <p class="precio">45,95 €</p>
+                </div>
+                <div class="col-sm-5 col-md-3 offset-sm-1 align-self-center text-center articulos mt-5">
+                    <a href="#"><img src="../images/alpha_spirit_salmon_arandanos.jpg" class="img-fluid mx-auto artifoto" alt="Elemento 1"></a><br><br>
+                    <p class="descripcion lead fs-4"><b>Alpha Spirit comida húmeda salmón con arándanos</b></p>
+                    <p class="precio">14,95 €</p>
+                </div>
+                <div class="col-sm-5 col-md-3 offset-md-1 align-self-center text-center articulos mt-5">
+                    <a href="#"><img src="../images/alpha_spirit_semi_puppies.jpg" class="img-fluid mx-auto artifoto" alt="Elemento 1"></a><br><br>
+                    <p class="descripcion lead fs-4"><b>Alpha Spirit Puppies pienso</b></p>
+                    <p class="precio">46,65 €</p>
+                </div> 
+                <div class="col-sm-5 col-md-3 offset-sm-1 offset-md-0 align-self-center text-center articulos mt-5">
+                    <a href="#"><img src="../images/alpha_spirit_snack_pollo.jpg" class="img-fluid mx-auto artifoto" alt="Elemento 1"></a><br><br>
+                    <p class="descripcion lead fs-4"><b>Snack para perros Alpha Spirit con pollo</b></p>
+                    <p class="precio">6,65 €</p>
+                </div>
+                <div class="col-sm-5 col-md-3 offset-md-1 align-self-center text-center articulos mt-5">
+                    <a href="#"><img src="../images/juguete_berenjena.jpg" class="img-fluid mx-auto artifoto" alt="Elemento 1"></a><br><br>
+                    <p class="descripcion lead fs-4"><b>Berenjena con sonido de juguete para perros color Morado</b></p>
+                    <p class="precio">5,79 €</p>
+                </div>
+                <div class="col-sm-5 col-md-3 offset-sm-1 align-self-center text-center articulos mt-5">
+                    <a href="#"><img src="../images/kong_extreme_negro.jpg" class="img-fluid mx-auto artifoto" alt="Elemento 1"></a><br><br>
+                    <p class="descripcion lead fs-4"><b>Kong Extreme Hueso de goma negro</b></p>
+                    <p class="precio">12,59 €</p>
+                </div>
+                <div class="col-sm-5 col-md-3 align-self-center text-center articulos mt-5"> 
+                    <a href="#"><img src="../images/kong_rojo.jpg" class="img-fluid mx-auto artifoto" alt="Elemento 1"></a><br><br>
+                    <p class="descripcion lead fs-4"><b>Kong Classic rojo juguete para perros</b></p>
+                    <p class="precio">7,99 €</p>
+                </div> 
+            </div>
+        </div>
         <!-- empieza el footer -->
         <footer class="footer mt-auto py-3 bg-">
             <div class="container">
