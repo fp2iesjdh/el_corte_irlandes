@@ -118,3 +118,57 @@ body {
     height: 600px;
 
 }
+
+/* estilos para cosas en los artículos */
+
+.carrito {
+
+    left: 95%;
+}
+
+.ant-precio {
+
+    text-decoration: line-through;
+    color: #FF6745;
+}
+
+#descripcion {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 5px 10px 18px #888888;
+
+}
+
+#texto {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.estrella {
+    color: orange;
+}
+
+.comprar {
+    background-color: rgb(42, 160, 105);
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+    width: 40%;
+    text-align: center;
+    box-shadow: 3px 7px 18px #a6c2a9;
+}
+
+.comprarAnchor {
+    text-decoration: none;
+    color: white;
+}
+
+.comprarAnchor:hover {
+    color: rgb(39, 39, 39);
+}
+
+.precio-articulo {
+
+    font-size: 1.5rem;
+}
