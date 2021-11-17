@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./css/producto.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>El corte irlandés</title>
+        <link rel="icon" href="logos/lepre.ico" type="image/x-icon">
+        <style>
+
+            body {
+
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: medium;
+            }
+
+            /* estilos para los botones del menu */
+
+            .btn, .btn-primary {
+
+                background-color:#0E9C62;
+                border-color: #0E9C62;
+                border-radius: 0%;
+                font-size:large;
+            }
+
+            .btn:hover, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+
+                background-color:#594038;
+                border-color: #58DEA6;
+            }
+
+            .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+
+                box-shadow:0 0 0 0.1rem #FFB37B;
+                background-color:#594038;
+            }
+
+            .dropdown-item:hover {
+
+                background-color:#58DEA6;
+            }
+
+            .dropdown-item:focus {
+
+                background-color:#FFB37B;
+            }
+            
+            /* estilos para el menu en general */
+
+            .marco-menu {
+                border-left: none !important;
+                border-right: none !important;
+                border-color: #594038 !important;
+                background-color: #E4E4E4;
+            }
+
+            /* estilos para el body */
+
+            .articulos {
+
+                /* background-color: #C5A094; */
+                /* background-color:#FFB37B; */
+                background-color: #E4E4E4;
+            }
+
+            /* estilos footer */
+            .footer {
+
+                background-color: #58DEA6;
+            }
+
+            .carousel-item {
+       height: 65vh;
+       min-height: 300px;
+       background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+     }
+
+    .transition {
+    -webkit-transform: scale(1.8); 
+    -moz-transform: scale(1.8);
+    -o-transform: scale(1.8);
+    transform: scale(1.8);
+    }
+    .carousel-item {
+      width: 40%;
+      height: 600px;
+    }
+    .carousel-item img {
+      height: 500px;
+      width: 500px;
+    }
+
+        </style>
+    </head>
+    <body>
+        <!-- boton para volver arriba -->
+        <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+        <!-- carrito de compra siempre arriba a la derecha -->
+        <a href="../../pages/carrito.html"><button type="button carrito" class="btn btn-primary position-fixed end-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg>
+            <span>carrito</span>
+            <span>(3)</span>
+        </button></a>
+        
+        <!-- empieza el header donde irá el logo y será clickable para ir a la portada -->
+        <header>
+            <div class="container-fluid">
+                <div class="row justify-content-center mt-2">
+                    <div class="col-6 ">
+                        <a href="#">
+                            <img src="../imagenes/logo.png" class="img-fluid mx-auto" alt="Volver a portada">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header> 
+        <!-- acaba el header, por ahora dejo el menu fuera -->
+        <div class="container-fluid menu-principal mt-3"> <!-- empieza el menu  -->
+            <div class="row border border-5 marco-menu mx-5">
+                <div class="col-12  align-self-center text-center menu my-3">
+                    <div class="btn-group"> <!-- empiezan los botones del menu -->
+                      <a href="../../../index.html"><button type="button" class="btn btn-primary">Electrodomésticos</button></a>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../../../Grandes_electrodomesticos/index.html">Grandes Electrodomésticos</a>                     
+                        <a class="dropdown-item" href="../../../Pequenos_electrodomesticos/index.html">Pequeños Electrodomésticos</a>
+                        <div class="dropdown-divider"></div> <!-- esto lo vi interesante, por si quieres poner una seccion extra especial -->
+                        <a class="dropdown-item" href="../../index.html">Ofertas</a>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <a href="../../../../dptomascotas/index.html"><button type="button"
+                                class="btn btn-primary">Mascotas</button></a>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../dptomascotas/pages/perros.html">Perros</a></li>
+                            <li><a class="dropdown-item" href="../../../../dptomascotas/pages/gatos.html">Gatos</a></li>
+                            <li><a class="dropdown-item" href="../../../../dptomascotas/pages/otros_animales.html">Otros animales</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a href="../../../../dptomusica/index.html"><button type="button" class="btn btn-primary">Música</button></a>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../dptomusica/80-90.html">80's - 90's</a></li>
+                            <li><a class="dropdown-item" href="../../../../dptomusica/90-00.html">90's - 2000</a></li>
+                            <li><a class="dropdown-item" href="../../../../dptomusica/00-10.html">2000 - 2010</a></li>
+                            <li><a class="dropdown-item" href="../../../../dptomusica/10-20.html">2010 - 2020</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a href="../../../../dptovideojuegos/index.html"><button type="button"
+                                class="btn btn-primary">Videojuegos</button></a>
+                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="../../../../dptovideojuegos/src/xbox.html">Xbox</a></li>
+                            <li><a class="dropdown-item" href="../../../../dptovideojuegos/src/playStation.html">PlayStation</a></li>
+                            <li><a class="dropdown-item" href="../../../../dptovideojuegos/src/nintendo.html">Nintendo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--Slider-->
+<center>
+    <div class="slideshow">
+        <div class="slides">
+            <div class="numbertext"></div>
+            <img src="../imagenes/32a_robot_cocina.png" style="width:30%; height:5%">
+        </div>
+        <div class="slides">
+            <div class="numbertext"></div>
+            <img src="../imagenes/32b_robot_cocina.png" style="width:30%; height:5%">
+        </div> 
+        <div class="slides">
+            <div class="numbertext"></div>
+            <img src="../imagenes/32c_robot_cocina.png" style="width:30%; height:5%">
+        </div>   
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].style.display = "block";
+            setTimeout(showSlides, 2000);
+        }
+    </script>
+
+<!--Fin del slider-->
+
+<!-- Meted aqui vuestro contenido. Este div ya esta ajustado a la pagina asi que no le cambieis el css-->
+
+<div class="contenido"> 
+        <h1 id="nombreProducto"></h1>
+        <p id="precioProducto"><b><h3>85.00€</h3></b></span><span id="iva">IVA Incluido</span></p>
+        <b><p id="formTamaño"></p></b>
+        <br>
+    <div id="informacionProducto">
+        <div id="informacion">
+            <h3>Robot Crock-Pot CSC052X</h3>
+            <p>- Color: Negro</p>
+            <p>- Descripción:  Crock-Pot CSC052X, De cocción lenta,temporizador digital,Función manual para ajustar la cocción a temperatura alta o baja,programable hasta 20 horas, 220 W, 4.7 l, Negro</p>            
+        </div>
+        <div id="garantias">
+            <p>- Garantía al 100% de satisfacción <b>(período de devolución de 40 días)</b></p>
+            <p>- <b>Envío gratuito</b> en pedidos de más de 39,99€</p>
+            <p>- Devoluciones en la tienda o mediante agencia de transporte</p>
+        </div>
+    </div>
+</div>
+
+</center>
+
+<!-- empieza el footer -->
+        <footer class="footer mt-auto py-3 bg-">
+          <div class="container">
+            <div class="row justify-content-between">
+              <div class=" col-4 d-none d-md-block embed-responsive embed-responsive-4by3 align-self-start"> <!-- este mapa se muestra a partir de tamaño medio -->
+                  <p class="titfooter"><b>Dónde encontrarnos!</b></p>
+                  <p id="direccion">IES Juan De Herrera<br>Carr. de Guadarrama, S/N,<br>28200 San Lorenzo de El Escorial, Madrid</p>
+                  <p id="boton">(Púlsame para ver el mapa)</p>
+                  <iframe class="embed-responsive-item" id ="mapa1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8474119298544!2d-4.1273884966594885!3d40.602490826354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd410a35997dbf19%3A0xb08e3642aef992f!2sIES%20Juan%20de%20Herrera!5e0!3m2!1ses!2ses!4v1635513496436!5m2!1ses!2ses" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <p id="boton2">Ocultar</p>
+              </div>
+              <div class="col-6 d-md-none embed-responsive embed-responsive-4by3"> <!-- este mapa es uno pequeño para resoluciones muy bajas -->
+                  <iframe class="embed-responsive-item" id ="mapa2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8474119298544!2d-4.1273884966594885!3d40.602490826354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd410a35997dbf19%3A0xb08e3642aef992f!2sIES%20Juan%20de%20Herrera!5e0!3m2!1ses!2ses!4v1635513496436!5m2!1ses!2ses" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <p id="boton2">Ocultar</p>
+              </div>
+              <div class="col-3 text-center">
+                  <p class="titfooter"><b>¿Necesitas ayuda?</b></p>
+                  <p>- Preguntas más frecuentes (FAQ)</p>
+                  <p>- Soporte técnico</p>
+                  <p>- Devoluciones y Reclamaciones</p>
+              </div>
+              <div class="col-3 text-center">
+                  <p class="titfooter"><b>Métodos de pago</b></p>
+                  <div class="row justify-content-center">
+                      <div class="col-2 offset-2 text-end"><img src="../images/logos/visa-logo.png" class="img-fluid mx-auto" alt="visa"></div>
+                      <div class="col-5 text-start"><p>Visa</p></div>
+                      <div class="col-2 offset-2 text-end"><img src="../images/logos/paypal.png" class="img-fluid mx-auto" alt="paypal"></div>
+                      <div class="col-5 text-start"><p>Paypal</p></div>
+                      <div class="col-2 offset-2 text-end"><img src="../images/logos/bizum.png" class="img-fluid mx-auto" alt="bizum"></div>
+                      <div class="col-5 text-start"><p>Bizum</p></div>
+                      <div class="col-2 offset-2 text-end"><img src="../images/logos/contra.png" class="img-fluid mx-auto" alt="contra"></div>
+                      <div class="col-5 text-start"><p>Contra reembolso</p></div>
+                      <div class="col-2 offset-2 text-end"><img src="../images/logos/bitcoin.png" class="img-fluid mx-auto" alt="contra"></div>
+                      <div class="col-5 text-start"><p>Bitcoin</p></div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="../../js/script_mapa_oculto.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="../../js/script_volver_arriba.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
