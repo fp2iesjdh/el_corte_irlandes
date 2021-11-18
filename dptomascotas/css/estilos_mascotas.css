@@ -1,0 +1,26 @@
+.titulos-perro{
+
+    background-color: #FF6745;
+    border-radius: 20px;
+}
+
+.revert {
+
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.arti-ofertas {
+
+    font-size: 20px;
+}
+
+.tit-oferta {
+
+    font-size: 20px !important;    
+}
+
+.oferta-foto {
+
+    height: 200px;
+}
