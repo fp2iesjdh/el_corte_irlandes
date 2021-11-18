@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>El corte irlandés</title>
+    <link rel="icon" href="/images/logos/lepre.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/estilos_principales.css">
+
+    <!--Google fonts-->
+    <!-- https://material.io/resources/icons/?style=outline -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="/dptovideojuegos/css/estilos.css">
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- boton para volver arriba -->
+    <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+    <!-- carrito de compra siempre arriba a la derecha -->
+    <a href="/pages/carrito.html"><button type="button carrito" class="btn btn-primary position-fixed end-0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                viewBox="0 0 16 16">
+                <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+            <span>carrito</span>
+            <span>(3)</span>
+        </button></a>
+    <!-- empieza el header donde irá el logo y será clickable para ir a la portada -->
+    <header>
+        <div class="container-fluid">
+            <div class="row justify-content-center mt-2">
+                <div class="col-6 ">
+                    <a href="/index.html">
+                        <img src="/images/logos/banner-logo.png" class="img-fluid mx-auto" alt="Volver a portada">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- acaba el header, por ahora dejo el menu fuera -->
+    <div class="container-fluid menu-principal mt-3">
+        <!-- empieza el menu  -->
+        <div class="row border border-5 marco-menu mx-5">
+            <div class="col-12 align-self-center text-center menu my-3">
+                <div class="btn-group">
+                    <a href="/dptoelectrodomesticos/index.html"><button type="button"
+                            class="btn btn-primary">Electrodomésticos</button></a>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item"
+                                href="/dptoelectrodomesticos/Grandes_electrodomesticos/index.html">Grandes
+                                Electrodomésticos</a></li>
+                        <li><a class="dropdown-item"
+                                href="/dptoelectrodomesticos/Pequenos_electrodomesticos/index.html">Pequeños
+                                Electrodomésticos</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="/dptoelectrodomesticos/Ofertas/index.html">Ofertas</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="/dptomascotas/index.html"><button type="button"
+                            class="btn btn-primary">Mascotas</button></a>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/dptomascotas/pages/perros.html">Perros</a></li>
+                        <li><a class="dropdown-item" href="/dptomascotas/pages/gatos.html">Gatos</a></li>
+                        <li><a class="dropdown-item" href="/dptomascotas/pages/otros_animales.html">Otros
+                                animales</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="/dptomusica/index.html"><button type="button" class="btn btn-primary">Música</button></a>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/dptomusica/80-90.html">80's - 90's</a></li>
+                        <li><a class="dropdown-item" href="/dptomusica/90-00.html">90's - 2000</a></li>
+                        <li><a class="dropdown-item" href="/dptomusica/00-10.html">2000 - 2010</a></li>
+                        <li><a class="dropdown-item" href="/dptomusica/10-20.html">2010 - 2020</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <a href="/dptovideojuegos/index.html"><button type="button"
+                            class="btn btn-primary">Videojuegos</button></a>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/dptovideojuegos/src/xbox.html">Xbox</a></li>
+                        <li><a class="dropdown-item" href="/dptovideojuegos/src/playStation.html">PlayStation</a></li>
+                        <li><a class="dropdown-item" href="/dptovideojuegos/src/nintendo.html">Nintendo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Empieza el body-->
+    <!--Empieza el body-->
+
+    <body>
+
+        <Div clase="producto" id="grid">
+            <div id="titulo">
+                <H1>Play Station 5</h1>
+            </div>
+
+
+            <div class="imagen m-5" id="imagen">
+                <img src="/dptovideojuegos/images/ImagesPlayStation/consolas/ps5001.png" alt="xy">
+            </div>
+
+            <section>
+
+                <div class="descripcion" id="descripcion">
+                    <p><b> Descripcion </b></p>
+                    <P>
+                        Hazte con tu PlayStation 5 Seminueva más un juego (nuevo) de la línea PlayStation Hits a elegir
+                        de entre títulos como : God of War, The Last Of Us, Infamous Second Son, Uncharted 5, Horizon
+                        Zero Dawn Complete Edition… aun precio impresionante. *
+
+                        Hacerse con esta oferta es sencillo: haz clic en comprar, elige tu consola PlayStation 5
+                        Seminueva, elige tu juego de PlayStation Hits y deja que nosotros nos ocupemos del resto.
+                        ¡Vamos! Estas a unos clics de tu PlayStation 5.
+
+                    </P>
+                </div>
+
+                <button type="button" class="btn btn-primary mt-5"> Compra Ya </button>
+
+            </section>
+        </Div>
+    </body>
+    <!--empieza el footer-->
+    <footer class="footer mt-auto py-3 bg-">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class=" col-4 d-none d-md-block embed-responsive embed-responsive-4by3 align-self-start">
+                    <!-- este mapa se muestra a partir de tamaño medio -->
+                    <p class="titfooter"><b>Dónde encontrarnos!</b></p>
+                    <p id="direccion">IES Juan De Herrera<br>Carr. de Guadarrama, S/N,<br>28200 San Lorenzo de El
+                        Escorial, Madrid</p>
+                    <p id="boton">(Púlsame para ver el mapa)</p>
+                    <iframe class="embed-responsive-item" id="mapa1"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8474119298544!2d-4.1273884966594885!3d40.602490826354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd410a35997dbf19%3A0xb08e3642aef992f!2sIES%20Juan%20de%20Herrera!5e0!3m2!1ses!2ses!4v1635513496436!5m2!1ses!2ses"
+                        width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p id="boton2">Ocultar</p>
+                </div>
+                <div class="col-6 d-md-none embed-responsive embed-responsive-4by3">
+                    <!-- este mapa es uno pequeño para resoluciones muy bajas -->
+                    <iframe class="embed-responsive-item" id="mapa2"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.8474119298544!2d-4.1273884966594885!3d40.602490826354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd410a35997dbf19%3A0xb08e3642aef992f!2sIES%20Juan%20de%20Herrera!5e0!3m2!1ses!2ses!4v1635513496436!5m2!1ses!2ses"
+                        width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <p id="boton2">Ocultar</p>
+                </div>
+                <div class="col-3 text-center">
+                    <p class="titfooter"><b>¿Necesitas ayuda?</b></p>
+                    <p>- Preguntas más frecuentes (FAQ)</p>
+                    <p>- Soporte técnico</p>
+                    <p>- Devoluciones y Reclamaciones</p>
+                </div>
+                <div class="col-3 text-center">
+                    <p class="titfooter"><b>Métodos de pago</b></p>
+                    <div class="row justify-content-center">
+                        <div class="col-2 offset-2 text-end"><img src="/images/logos/visa-logo.png"
+                                class="img-fluid mx-auto" alt="visa"></div>
+                        <div class="col-5 text-start">
+                            <p>Visa</p>
+                        </div>
+                        <div class="col-2 offset-2 text-end"><img src="/images/logos/paypal.png"
+                                class="img-fluid mx-auto" alt="paypal"></div>
+                        <div class="col-5 text-start">
+                            <p>Paypal</p>
+                        </div>
+                        <div class="col-2 offset-2 text-end"><img src="/images/logos/bizum.png"
+                                class="img-fluid mx-auto" alt="bizum"></div>
+                        <div class="col-5 text-start">
+                            <p>Bizum</p>
+                        </div>
+                        <div class="col-2 offset-2 text-end"><img src="/images/logos/contra.png"
+                                class="img-fluid mx-auto" alt="contra"></div>
+                        <div class="col-5 text-start">
+                            <p>Contra reembolso</p>
+                        </div>
+                        <div class="col-2 offset-2 text-end"><img src="/images/logos/bitcoin.png"
+                                class="img-fluid mx-auto" alt="contra"></div>
+                        <div class="col-5 text-start">
+                            <p>Bitcoin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="/js/script_mapa_oculto.js"></script>
+</body>
+
+</html>
